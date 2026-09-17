@@ -5,12 +5,12 @@ First Last - Month Year
 
 
 def main() -> None:
-    word: str = "computer"
+    word: str = "creative computing"
     
-    print(word[0:3])
-    print(word[3:6])
-    print(word[1:5])
-    print(word[4:8])
+    print(word[1:5:2])
+    print(word[:8:3])
+    print(word[-2:-6:-1])
+    print(word[::-1])
 
 if __name__ == "__main__":
     main()

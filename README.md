@@ -11,21 +11,21 @@ Record your predictions:
 
 | Code | Prediction |
 |---|---|
-| `word[0:3]` | |
-| `word[3:6]` | |
-| `word[1:5]` | |
-| `word[4:8]` | |
+| `word[0:3]` | com|
+| `word[3:6]` | put|
+| `word[1:5]` | ompu |
+| `word[4:8]` | uter|
 
 ### Think About It
 
 1. Does Python include the character at the `start` position?
-    > Your answer
+    > yes it does
 
 2. Does Python include the character at the `stop` position?
-    > Your answer
+    > no it doesnt
 
 3. How many characters would you expect from `word[2:5]`?
-    > Your answer
+    > 3
 
 # Run
 
@@ -34,17 +34,18 @@ Run the program. Compare the actual output to your predictions.
 ### Reflection
 
 - Which predictions were correct?
-    > Your answer
+    > they were
 
 - Which were incorrect?
-    > Your answer
+    > none
 
 - What rule can you write for how the `start` and `stop` values work?
-    > Your answer
+    > A string slice starts at the start value and stops one before the end value.
+
 
 Complete this sentence:
 
-> A string slice starts at __________ and stops __________.
+> A string slice starts at the start value and stops one before the end value.
 
 
 # Investigate
@@ -61,31 +62,31 @@ Then run the code and describe what it does.
 
 | Code | Prediction | Actual Value| 
 |---|---|---|
-| `print(word[:5])` | | |
+| `print(word[:5])` | creat|creat |
 
 
 What does Python assumes when the `start` value is missing?
-> Your answer
+> that the start value is zero
 
 
 ## Leaving Out `stop`
 
 | Code | Prediction | Actual Value| 
 |---|---|---|
-| `print(word[5:])` | | |
+| `print(word[5:])` |ive computing |ive computing |
 
 What does Python assumes when the `stop` value is missing?
-> Your answer
+> go till the variable ends
 
 
 ## Using Negative Indices
 | Code | Prediction | Actual Value| 
 |---|---|---|
-| `print(word[-8:-4:])` | | |
-| `print(word[-4:])` | | |
+| `print(word[-8:-4:])` |ompu |ompu |
+| `print(word[-4:])` |ting | ting|
 
 What does a negative index mean?
-> Your answer
+> instead of reading from left to right you read from right to left
 
 
 ## Adding a Step
@@ -93,18 +94,18 @@ What does a negative index mean?
 Slices can include a third value, the step.
 | Code | Prediction | Actual Value| 
 |---|---|---|
-| `print(word[1:5:2])` | | |
-| `print(word[:8:3])` | | |
-| `print(word[-2:-6:-1])` | | |
-| `print(word[-3::-1])` | | |
+| `print(word[1:5:2])` | rat|ra |
+| `print(word[:8:3])` | cretive| cav|
+| `print(word[-2:-6:-1])` | utin|nitu |
+| `print(word[-3::-1])` | n|itupmoc evitaerc |
 
 What does a step of -1 do?
-> Your answer
+> it makes you read it form right to left
 
 What does the following strange slice do?
 | Code | Prediction | Actual Value| 
 |---|---|---|
-| `print(word[::-1])` | | |
+| `print(word[::-1])` |gnitupmoc evitaerc |gnitupmoc evitaerc |
 
 
 # Modify
